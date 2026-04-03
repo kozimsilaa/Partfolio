@@ -11,7 +11,7 @@ html, body{
 body {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     color: #fff;
     background-color: #0f0f0f;
     transition: 0.7s;
@@ -198,7 +198,7 @@ body {
 }
 
 .sinfdoshlar__img {
-    max-width: 1200px;
+    max-width: 800px;
     border-radius: 20px;
     transition: 0.3s linear;
     box-shadow: 0.3s;
@@ -208,11 +208,10 @@ body {
 
 .sinfdoshlar__img:hover {
     transform: translate(-10px);
-    overflow: hidden;
 }
 
 .team {
-    margin-top: 350px;
+    margin-top: 60px;
 }
 
 .team-grid {
@@ -598,7 +597,7 @@ form textarea {
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #051129;
+    background: gray;
     color: #ff6b00;
     font-size: 1rem;
     font-weight: 600;
@@ -617,7 +616,7 @@ form textarea:hover {
 .contact-form form input:focus,
 form textarea:focus {
     border-color: #ff6b00;
-    background: #0a1f3a;
+    background: black;
     box-shadow: 0 0 15px #ff6b00, 0 0 30px #ff6b00;
     transform: scale(1.02);
 }
@@ -633,7 +632,7 @@ form textarea:focus {
     background: #ff6b00;
     border-radius: 40px;
     font-size: 18px;
-    color: #081b29;
+    color: gray;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
