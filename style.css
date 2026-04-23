@@ -435,8 +435,24 @@ body {
 }
 
 .about__img {
-    max-width: 200px;
-    border-radius: 20px;
+    right: 8%;
+    bottom: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid transparent;
+    background: linear-gradient(135deg, #ff6b00);
+    box-shadow: 0 0 50px #ff6b00, inset 0 0 50px #ff6b00;
+    animation: imagePulse 3s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__img img {
+    width: 100px;
+    height: 100px;
 }
 
 .about__text {
@@ -622,7 +638,7 @@ a {
 }
 
 .contact-list {
-    margin-bottom: 3rem;
+    gap: 30px;
 }
 
 .contact-list li {
@@ -631,11 +647,11 @@ a {
 }
 
 .contact-list i {
-    display: inline-block;
     color: #ff6b00;
     font-size: 20px;
     font-weight: 600;
     transition: all .40s ease;
+    gap: 20px;
 }
 
 .contact-list li a:hover {
@@ -682,7 +698,7 @@ form textarea {
     outline: none;
     width: 90%;
     padding: 18px;
-    background: gray;
+    background: color(srgb red green blue);
     color: #ff6b00;
     font-size: 1rem;
     font-weight: 600;
@@ -717,7 +733,7 @@ form textarea:focus {
     background: #ff6b00;
     border-radius: 40px;
     font-size: 18px;
-    color: gray;
+    color: var(--blok-fon);
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
