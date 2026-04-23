@@ -199,7 +199,7 @@ body {
 }
 
 .sinfdoshlar__img {
-    max-width: 1200px;
+    max-width: 700px;
     border-radius: 20px;
     transition: 0.3s linear;
     box-shadow: 0.3s;
@@ -250,6 +250,84 @@ body {
     border-radius: 60%;
     margin-bottom: 10px;
     object-fit: cover;
+}
+
+.ustozlar__konteyner {
+    max-width: 1140px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.ustozlar__sarlavha {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.ustozlar__panjara {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ustozlar__karta {
+    background-color: var(--blok-fon);
+    border: 1px solid var(--chegara);
+    border-radius: 20px;
+    padding: 30px;
+    width: calc(45% - 15px); 
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all 0.4s ease;
+}
+
+.ustozlar__karta--alohida {
+    width: 60%;
+    background: linear-gradient(145deg, #161616, #1a1a1a);
+}
+
+.ustozlar__karta:hover {
+    border-color: var(--sabzi);
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(255, 107, 0, 0.1);
+}
+
+.ustozlar__rasm-qobiq {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #333;
+    transition: border-color 0.3s ease;
+}
+
+.ustozlar__karta:hover .ustozlar__rasm-qobiq {
+    border-color: var(--sabzi);
+}
+
+.ustozlar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ustozlar__ism {
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.ustozlar__lavozim {
+    margin: 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.ustozlar__karta:hover .ustozlar__ism {
+    color: var(--sabzi);
 }
 
 .services {
@@ -653,4 +731,13 @@ form textarea:focus {
         0 0 25px #ff6b00, 0 0 50px #ff6b00,
         0 0 100px #ff6b00, 0 0 200px #ff6b00;
         color: #000;
+}
+
+@media (max-width: 768px) {
+    .yaqinlar__panjara {
+        grid-template-columns: 1fr;
+    }
+    .yaqinlar__karta--katta {
+        grid-row: span 1;
+    }
 }
