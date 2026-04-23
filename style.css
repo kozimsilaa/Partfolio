@@ -173,20 +173,26 @@ body {
 }
 
 .hero__aylana {
+    position: absolute;
+    right: 8%;
+    bottom: 100px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    background-color: rgb(36, 36, 36);
-    height: 450px;
-    width: 450px;
+    overflow: hidden;
+    border: 5px solid transparent;
+    background: linear-gradient(135deg, #ff6b00);
+    box-shadow: 0 0 50px #ff6b00, inset 0 0 50px #ff6b00;
+    animation: imagePulse 3s ease-in-out infinite;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+
 }
 
 .hero__img {
-    max-width: 300px;
-    height: 300px;
-    margin-bottom: 80px;
-    border-radius: 100px;
+    width: 600px;
+    height: 600px;
 }
 
 .sinfdoshlar__wrapper {
