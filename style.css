@@ -88,7 +88,7 @@ body {
 }
 
 .hero__h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 800;
 }
 
@@ -242,7 +242,6 @@ body {
     border: 0.5px solid #ff6b00;
     padding: 20px;
     border-radius: 15px;
-    transition: .1s;
 }
 
 .member:hover {
@@ -258,60 +257,74 @@ body {
     object-fit: cover;
 }
 
+:root {
+    --sabzi: #ff6b00;
+    --blok-fon: rgba(255, 255, 255, 0.05); 
+    --chegara: rgba(255, 255, 255, 0.1);
+    --matn-oq: #ffffff;
+    --matn-kulrang: #a0a0a0;
+}
+
+.ustozlar {
+    background-color: #0d0d0d; 
+    padding: 80px 0;
+}
+
 .ustozlar__konteyner {
-    max-width: 1140px;
-    margin: 60px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 .ustozlar__sarlavha {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    color: var(--matn-oq);
+    margin-bottom: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
 }
 
 .ustozlar__panjara {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
     gap: 30px;
 }
 
 .ustozlar__karta {
-    background-color: var(--blok-fon);
+    background: var(--blok-fon);
+    backdrop-filter: blur(10px); 
     border: 1px solid var(--chegara);
-    border-radius: 20px;
-    padding: 30px;
-    width: calc(45% - 15px); 
+    border-radius: 24px;
+    padding: 40px;
     display: flex;
     align-items: center;
-    gap: 25px;
-    transition: all 0.4s ease;
-}
-
-.ustozlar__karta--alohida {
-    width: 60%;
-    background: linear-gradient(145deg, #161616, #1a1a1a);
+    gap: 35px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .ustozlar__karta:hover {
     border-color: var(--sabzi);
-    transform: scale(1.03);
-    box-shadow: 0 15px 40px rgba(255, 107, 0, 0.1);
+    transform: translateY(-10px);
+    background: rgba(255, 107, 0, 0.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(255, 107, 0, 0.1);
 }
 
 .ustozlar__rasm-qobiq {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
+    width: 140px; 
+    height: 140px;
+    border-radius: 20px;
     overflow: hidden;
-    border: 2px solid #333;
-    transition: border-color 0.3s ease;
+    flex-shrink: 0; 
+    border: 3px solid transparent;
+    transition: all 0.4s ease;
 }
 
 .ustozlar__karta:hover .ustozlar__rasm-qobiq {
     border-color: var(--sabzi);
+    border-radius: 50%; 
 }
 
 .ustozlar__img {
@@ -321,15 +334,18 @@ body {
 }
 
 .ustozlar__ism {
-    margin: 0 0 5px 0;
-    font-size: 1.3rem;
+    color: var(--matn-oq);
+    font-size: 1.6rem;
+    margin: 0 0 8px 0;
     transition: color 0.3s ease;
 }
 
 .ustozlar__lavozim {
+    color: var(--matn-kulrang);
+    font-size: 1rem;
     margin: 0;
-    color: #888;
-    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .ustozlar__karta:hover .ustozlar__ism {
@@ -733,7 +749,7 @@ form textarea:focus {
     background: #ff6b00;
     border-radius: 40px;
     font-size: 18px;
-    color: var(--blok-fon);
+    color: white;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
