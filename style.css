@@ -254,6 +254,7 @@ body {
     border: 0.5px solid #ff6b00;
     padding: 20px;
     border-radius: 15px;
+    transition: 0.5s;
 }
 
 .member:hover {
@@ -594,16 +595,18 @@ a {
 }
 
 .portfolio__card {
-    transition: 0.3s;
-    box-shadow: 0.3s;
+    object-fit: cover;
     overflow: hidden;
+    box-shadow: 0 0 50px #ff6b00;
+    animation: imagePulse 3s ease-in-out infinite;
     border-radius: 20px;
-    background-color: #1e1e1e;
+    margin-bottom: 50px;
+    transition: 0.5s;
 }
 
 .portfolio__card:hover {
-    box-shadow: 0 10px 30px black;
-    transform: translate(-5px);
+    box-shadow: 0 10px 30px #ff6b00;
+    transform: translate(-10px);
 }
 
 .portfolio__img-box {
