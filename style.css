@@ -53,6 +53,10 @@ body {
     color: #ff6b00;
 }
 
+.services__title {
+    color: #ff6b00;
+}
+
 .header__button {
     background-color: #ff6b00;
     border-radius: 5px;
@@ -83,6 +87,7 @@ body {
 }
 
 .hero__name {
+    color: #ff6b00;
     font-size: 22px;
     margin: 5px 0;
 }
@@ -163,7 +168,7 @@ body {
 }
 
 .hero__stat-itemlari p {
-    font-size: 16pxpx;
+    font-size: 16px;
     color: gray;
 }
 
@@ -187,7 +192,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .hero__img {
@@ -200,21 +204,27 @@ body {
 }
 
 .sinfdoshlar__title {
-    margin-top: 60px;
+    color: #ff6b00;
+    font-size: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
 .sinfdoshlar__img {
-    max-width: 700px;
+    width: 970px;
+    height: 520px;
+    object-fit: cover;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff6b00);
+    box-shadow: 0 0 50px #ff6b00, inset 0 0 50px #ff6b00;
+    animation: imagePulse 3s ease-in-out infinite;
     border-radius: 20px;
-    transition: 0.3s linear;
-    box-shadow: 0.3s;
-    background-color: rgb(36, 36, 36);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
 }
 
 .sinfdoshlar__img:hover {
-    transform: translate(-10px);
+    transform: translate(-20px);
 }
 
 .team {
@@ -230,7 +240,9 @@ body {
 
 .team__h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    font-size: 50px;
+    color: #ff6b00;
 }
 
 .member {
@@ -277,9 +289,9 @@ body {
 }
 
 .ustozlar__sarlavha {
+    color: #ff6b00;
     text-align: center;
     font-size: 3rem;
-    color: var(--matn-oq);
     margin-bottom: 60px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -294,7 +306,7 @@ body {
 .ustozlar__karta {
     background: var(--blok-fon);
     backdrop-filter: blur(10px); 
-    border: 1px solid var(--chegara);
+    border: 1px solid #ff6b00;
     border-radius: 24px;
     padding: 40px;
     display: flex;
@@ -371,7 +383,7 @@ body {
 
 .services__title {
     margin-bottom: 60px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .services__grid {
@@ -434,8 +446,9 @@ body {
 }
 
 .about__title {
+    color: #ff6b00;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .about__title2 {
@@ -543,10 +556,11 @@ a {
 }
 
 .portfolio__title {
+    color: #ff6b00;
     text-align: center;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 60px;
 }
 
 .portfolio__bolimlar {
